@@ -13,20 +13,20 @@
     <div class="example-container">
        
         <mat-form-field>
-            <input matInput placeholder="NOI" type="number" class="example-right-align">
+            <input matInput placeholder="NOI" type="number" class="example-right-align" [(ngModel)]='noi'>
             <span matPrefix>$&nbsp;</span>
             <span matSuffix>.00</span>
           </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Property Value" type="number" class="example-right-align">
+          <input matInput placeholder="Property Value" type="number" class="example-right-align" [(ngModel)]='propVal'>
           <span matPrefix>$&nbsp;</span>
           <span matSuffix>.00</span>
         </mat-form-field>
    
       <mat-form-field>
-        <input matInput placeholder="Cap Rate" type="number" class="example-right-align" [value]="CAPRATE">
-        <span matPrefix>$&nbsp;</span>
-        <span matSuffix>.00</span>
+        <input matInput placeholder="Cap Rate" type="number" class="example-right-align" [value]="noi/propVal">
+        <span matPrefix>%&nbsp;</span>
+        <span matSuffix></span>
       </mat-form-field>
     </div>
     <mat-card-actions>

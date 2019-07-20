@@ -8,4 +8,8 @@ import {Component} from '@angular/core';
   templateUrl: 'card-fancy-example.html',
   styleUrls: ['card-fancy-example.css'],
 })
-export class CardFancyExample {}
+export class CardFancyExample {
+  public noi = 2;
+  public propVal = 5;
+  public caprate = this.noi/this.propVal
+}
