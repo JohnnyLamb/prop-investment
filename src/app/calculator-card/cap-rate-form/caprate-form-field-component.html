@@ -1,0 +1,19 @@
+<div class="caprate-container">
+       
+  <mat-form-field>
+      <input matInput placeholder="NOI" type="number" class="caprate-right-align" [(ngModel)]='noi'>
+      <span matPrefix>$&nbsp;</span>
+      <span matSuffix>.00</span>
+    </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Property Value" type="number" class="caprate-right-align" [(ngModel)]='propVal'>
+    <span matPrefix>$&nbsp;</span>
+    <span matSuffix>.00</span>
+  </mat-form-field>
+
+<mat-form-field>
+  <input matInput placeholder="Cap Rate" type="number" class="caprate-right-align" [value]="noi/propVal*100">
+  <span matPrefix>%&nbsp;</span>
+  <span matSuffix></span>
+</mat-form-field>
+</div>

@@ -5,9 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { ToolbarOverviewComponent } from './toolbar-overview/toolbar.component';
-import { MenuOverviewExample } from './main-menu/main-menu.component';
-import { CardFancyExample } from './calculator-card/card-fancy.component';
-import { CapRateComponent } from './calculator-card/cap-rate-form/cap-rate.component'
+import { MenuOverviewComponent } from './main-menu/main-menu.component';
+import { CapRateCardComponent } from './calculator-card/caprate-card';
+import { CapRateFormComponent } from './calculator-card/cap-rate-form/caprate-form.component'
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,9 +21,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   declarations: [
     AppComponent,
     ToolbarOverviewComponent,
-    MenuOverviewExample,
-    CardFancyExample,
-    CapRateComponent
+    MenuOverviewComponent,
+    CapRateCardComponent,
+    CapRateFormComponent
   ],
   imports: [
     BrowserModule,
