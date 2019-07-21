@@ -6,8 +6,10 @@ import { MatButtonModule, MatCheckboxModule, MatMenuModule, MatInputModule} from
 import { AppComponent } from './app.component';
 import { ToolbarOverviewComponent } from './toolbar-overview/toolbar.component';
 import { MenuOverviewComponent } from './main-menu/main-menu.component';
-import { CapRateCardComponent } from './calculator-card/caprate-card';
-import { CapRateFormComponent } from './calculator-card/cap-rate-form/caprate-form.component'
+import { CapRateCardComponent } from './calculator-card/cap-rate-component/caprate-card';
+import { CapRateFormComponent } from './calculator-card/cap-rate-component/cap-rate-form/caprate-form-field.component';
+import {OnePercentCardComponent} from './calculator-card/one-percent-component/one-percent-card';
+import {OnePercentFormComponent} from './calculator-card/one-percent-component/one-percent-form/one-percent-form-field-component';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -16,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ToolbarOverviewComponent,
     MenuOverviewComponent,
     CapRateCardComponent,
-    CapRateFormComponent
+    CapRateFormComponent,
+    OnePercentCardComponent,
+    OnePercentFormComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatMenuModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

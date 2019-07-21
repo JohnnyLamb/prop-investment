@@ -1,0 +1,19 @@
+<div class="one-percent-container">
+       
+  <mat-form-field>
+      <input matInput placeholder="Monthly Rental" type="number" class="one-percent-right-align" [(ngModel)]='noi'>
+      <span matPrefix>$&nbsp;</span>
+      <span matSuffix>.00</span>
+    </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Purchase Price" type="number" class="one-percent-right-align" [(ngModel)]='propVal'>
+    <span matPrefix>$&nbsp;</span>
+    <span matSuffix>.00</span>
+  </mat-form-field>
+
+<mat-form-field>
+  <input matInput placeholder="Cap Rate" type="number" class="one-percent-right-align" [value]="noi/propVal*100">
+  <span matPrefix>%&nbsp;</span>
+  <span matSuffix></span>
+</mat-form-field>
+</div>

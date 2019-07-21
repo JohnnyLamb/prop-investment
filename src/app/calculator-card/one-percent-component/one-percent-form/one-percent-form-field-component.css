@@ -1,0 +1,21 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-container > * {
+    width: 100%;
+  }
+  
+  .app-right-align {
+    text-align: right;
+  }
+  
+  input.app-right-align::-webkit-outer-spin-button,
+  input.app-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.app-right-align {
+    -moz-appearance: textfield;
+  }
